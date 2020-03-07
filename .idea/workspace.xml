@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f32e8b9c-edc8-4c18-9ef0-3b5fd24af052" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/IGamePlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/BeforeAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/DynamicProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/IAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/MyInvocationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/RealSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/design_pattern/com/albedo/proxypattern/dynamicproxy/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design_pattern/com/albedo/proxypattern/dynamicproxy/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/design_pattern/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/design_pattern/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,56 +31,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/constraintproxy/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/IProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/GamePlayerProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/Client.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#270#271#0" expanded="true" />
@@ -84,45 +45,90 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/IGamePlayer.java">
+        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Subject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/IGamePlayer.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/GamePlayer.java">
+        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/RealSubject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="45">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayer.java">
+        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/MyInvocationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#283#284#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/IAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/BeforeAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/DynamicProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/Client.java">
+        <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="75">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="551" column="18" selection-start-line="551" selection-start-column="18" selection-end-line="551" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/MethodAccessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -159,10 +165,17 @@
         <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/constraintproxy/Client.java" />
         <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/IProxy.java" />
         <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/GamePlayerProxy.java" />
-        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java" />
         <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/IGamePlayer.java" />
         <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayer.java" />
         <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/Client.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/DynamicProxy.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/IAdvice.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/BeforeAdvice.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/MyInvocationHandler.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/RealSubject.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Subject.java" />
+        <option value="$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Client.java" />
       </list>
     </option>
   </component>
@@ -227,7 +240,16 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="albedo" type="462c0819:PsiDirectoryNode" />
               <item name="proxypattern" type="462c0819:PsiDirectoryNode" />
-              <item name="staticproxy" type="462c0819:PsiDirectoryNode" />
+              <item name="dynamicproxyabstract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="design_pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="albedo" type="462c0819:PsiDirectoryNode" />
+              <item name="proxypattern" type="462c0819:PsiDirectoryNode" />
+              <item name="proxyabstract" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
@@ -250,6 +272,23 @@
               <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="java.base" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
@@ -258,6 +297,30 @@
               <item name="java.base" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="time" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="jdk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="jdk" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="design_pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 11 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="jdk" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="reflect" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,12 +475,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583541140716</updated>
-      <workItem from="1583541145183" duration="4528000" />
+      <workItem from="1583541145183" duration="5749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4528000" />
+    <option name="totallyTimeSpent" value="5749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -430,7 +493,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32961586" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32961586" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
@@ -439,7 +502,7 @@
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32961586" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32961586" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -619,18 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -641,7 +692,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/staticproxy/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-end-line="19" />
+          <caret line="18" column="32" selection-start-line="18" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -650,11 +701,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="270">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/InvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/jdk/internal/reflect/MethodAccessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="551" column="18" selection-start-line="551" selection-start-column="18" selection-end-line="551" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxy/GamePlayerIH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#300#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/IAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/BeforeAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/MyInvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/DynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/RealSubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/albedo/proxypattern/dynamicproxyabstract/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>

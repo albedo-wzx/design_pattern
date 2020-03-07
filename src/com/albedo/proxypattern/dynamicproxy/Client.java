@@ -12,9 +12,11 @@ public class Client {
         System.out.println("开始时间是"+ LocalDate.now()+" "+ LocalTime.now());
         ClassLoader classLoader=player.getClass().getClassLoader();
         IGamePlayer proxy= (IGamePlayer) Proxy.newProxyInstance(classLoader,new Class[]{IGamePlayer.class},handler);
-
+        //登录
         proxy.login("albedo","albedo");
+        //杀怪
         proxy.killBoss();
+        //升级
         proxy.upgrade();
         System.out.println("完成时间是"+ LocalDate.now()+" "+ LocalTime.now());
 
