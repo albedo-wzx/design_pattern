@@ -11,8 +11,10 @@ public class Client {
         Subject subject = new RealSubject();
         //定义一个handler
         InvocationHandler handler = new MyInvocationHandler(subject);
-        Subject proxy = DynamicProxy.newProxyInstance(subject.getClass().getClassLoader(),
-                subject.getClass().getInterfaces(), handler);
+        //定义主题的代理
+//        Subject proxy = DynamicProxy.newProxyInstance(subject.getClass().getClassLoader(),
+//                subject.getClass().getInterfaces(), handler);
+        Subject proxy = SubjectDynamicProxy.newProxyInstance(subject);
         //代理的行为
         proxy.doSomething("Finish");
     }
