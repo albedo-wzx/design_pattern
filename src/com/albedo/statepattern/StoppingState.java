@@ -9,7 +9,7 @@ public class StoppingState extends LifeState{
 
     @Override
     public void close() {
-
+        System.out.println("电梯关门了。。。");
     }
 
     @Override

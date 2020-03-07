@@ -14,11 +14,11 @@ public class OpeningState extends LifeState{
 
     @Override
     public void run() {
-
+        System.out.println("开门状态下不能运行");
     }
 
     @Override
     public void stop() {
-
+        System.out.println("开门状态已经是停止状态了");
     }
 }
